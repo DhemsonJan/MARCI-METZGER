@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Progressive enhancement gate: reveals only hide content when JS is
+         available to bring it back. Runs before the body parses, so there is
+         no flash of unstyled/visible content. -->
+    <script>document.documentElement.classList.add('js');</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marci Metzger | The Ridge Realty Group - Pahrump Realtor</title>
+    <meta name="description" content="Marci Metzger - The Ridge Realty Group, Pahrump Realtor with nearly 3 decades of experience. Get it SOLD! Top residential sales in Pahrump, Nevada.">
+    <link rel="canonical" href="https://YOUR-DOMAIN/">
+
+    <!-- Favicon (reuses the existing logo mark) -->
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="apple-touch-icon" href="images/logo.png">
+    <meta name="theme-color" content="#1a1a1a">
+
+    <!-- Open Graph / social preview
+         TODO: replace every https://YOUR-DOMAIN with the live URL once the site is hosted.
+         Absolute URLs are required for previews to render. -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Marci Metzger | The Ridge Realty Group">
+    <meta property="og:title" content="Marci Metzger | Pahrump Realtor — Get it SOLD!">
+    <meta property="og:description" content="Nearly 3 decades of Pahrump real estate experience. Top residential sales, buyer guidance, and a full photo showcase of homes sold across the valley.">
+    <meta property="og:url" content="https://YOUR-DOMAIN/">
+    <meta property="og:image" content="https://YOUR-DOMAIN/images/bg2.jpg">
+    <meta property="og:image:width" content="1920">
+    <meta property="og:image:height" content="1080">
+    <meta property="og:image:alt" content="Pahrump Valley desert landscape at golden hour">
+    <meta property="og:locale" content="en_US">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Marci Metzger | Pahrump Realtor — Get it SOLD!">
+    <meta name="twitter:description" content="Nearly 3 decades of Pahrump real estate experience. Top residential sales, buyer guidance, and a full photo showcase of homes sold across the valley.">
+    <meta name="twitter:image" content="https://YOUR-DOMAIN/images/bg2.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header and Navigation -->
+    <header class="header">
+        <nav class="nav container">
+            <div class="nav__brand">
+                <img src="images/logo.png" alt="Marci Metzger The Ridge Realty Group" class="nav__logo">
+                <div class="nav__brand-text">
+                    <span class="nav__brand-name">MARCI METZGER</span>
+                    <span class="nav__brand-sub">THE RIDGE REALTY GROUP</span>
+                </div>
+            </div>
+            <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation menu">
+                <span class="nav__toggle-bar"></span>
+                <span class="nav__toggle-bar"></span>
+                <span class="nav__toggle-bar"></span>
+            </button>
+            <ul class="nav__menu" id="navMenu">
+                <li class="nav__item">
+                    <a href="#home" class="nav__link">Home</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#about" class="nav__link">About</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#services" class="nav__link">Services</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#gallery" class="nav__link">Gallery</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#contact" class="nav__link">Contact</a>
+                </li>
+                <li class="nav__item nav__item--cta">
+                    <a href="tel:2069196886" class="nav__cta">Call Now</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="scroll-progress" aria-hidden="true">
+            <span class="scroll-progress__bar" id="scrollProgress"></span>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero__background">
+            <img src="Background Pictures/Home.jpg" alt="A home in Pahrump, Nevada beneath the desert ridge" class="hero__image" onerror="this.style.display='none'">
+            <div class="hero__overlay"></div>
+        </div>
+        <div class="hero__content container">
+            <div class="hero__text">
+                <h1 class="hero__title">MARCI METZGER</h1>
+                <p class="hero__subtitle">THE RIDGE REALTY GROUP</p>
+                <h2 class="hero__heading">Pahrump Realtor</h2>
+                <div class="hero__actions">
+                    <a href="#search" class="btn btn--primary">Explore Homes</a>
+                    <a href="tel:2069196886" class="btn btn--secondary">Call Now</a>
+                </div>
+            </div>
+        </div>
+        <a href="#about" class="hero__cue" aria-label="Scroll to the about section">
+            <span class="hero__cue-label">Scroll</span>
+            <span class="hero__cue-line" aria-hidden="true"></span>
+        </a>
+    </section>
+
+    <!-- Marci Metzger Introduction and Selling Services -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about__intro reveal">
+                <div class="about__image-wrapper">
+                    <img src="images/marci.jpg" alt="Marci Metzger - The Ridge Realty Group Realtor" class="about__image">
+                </div>
+                <div class="about__intro-content">
+                    <h2 class="section__title">MARCI METZGER</h2>
+                    <p class="about__subtitle">REALTOR FOR NEARLY 3 DECADES</p>
+                    <a href="tel:2069196886" class="about__phone">(206) 919-6886</a>
+                </div>
+            </div>
+
+            <!-- Results band: every figure below is taken from Marci's own copy -->
+            <div class="stats reveal" aria-label="Results at a glance">
+                <div class="stat">
+                    <p class="stat__label">Clients helped in 2021</p>
+                    <p class="stat__value">
+                        <span class="stat__mark" aria-hidden="true">~</span><span class="stat__number" data-count="90">90</span>
+                    </p>
+                </div>
+                <div class="stat">
+                    <p class="stat__label">Closed in sales</p>
+                    <p class="stat__value">
+                        <span class="stat__mark" aria-hidden="true">$</span><span class="stat__number" data-count="28.5" data-decimals="1">28.5</span><span class="stat__mark" aria-hidden="true">M</span>
+                    </p>
+                </div>
+                <div class="stat">
+                    <p class="stat__label">Top residential sales</p>
+                    <p class="stat__value">
+                        <span class="stat__number" data-count="5">5</span><span class="stat__mark" aria-hidden="true">&nbsp;yrs</span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="selling">
+                <div class="selling__header reveal">
+                    <h2 class="selling__title">GET IT SOLD</h2>
+                    <div class="selling__title-line"></div>
+                </div>
+                
+                <div class="selling__showcase">
+                    <div class="selling__main-card reveal">
+                        <div class="selling__image-wrapper">
+                            <img src="images/GET IT SOLD/3.webp" alt="Top residential sales" class="selling__image">
+                            <div class="selling__image-overlay"></div>
+                        </div>
+                        <div class="selling__content">
+                            <span class="selling__badge">Proven Results</span>
+                            <h3 class="selling__main-title">Top Residential Sales Last 5 Years</h3>
+                            <p class="selling__main-text">
+                                We helped nearly 90 clients in 2021, and closed 28.5 million in sales! Our team works hard everyday to grow and learn, so that we may continue to excel in our market. Our clients deserve our best, & we want to make sure our best is better every year.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="selling__grid">
+                        <article class="selling__card selling__card--secondary reveal reveal--d1">
+                            <div class="selling__card-image-wrapper">
+                                <img src="images/GET IT SOLD/2.webp" alt="Get it sold marketing" class="selling__card-image">
+                                <div class="selling__card-overlay"></div>
+                            </div>
+                            <div class="selling__card-content">
+                                <h3 class="selling__card-title">Don't Just List it...</h3>
+                                <p class="selling__card-text">
+                                    <strong>Get it SOLD!</strong> We exhaust every avenue to ensure our listings are at the fingertips of every possible buyer, getting you top dollar for your home.
+                                </p>
+                            </div>
+                        </article>
+
+                        <article class="selling__card selling__card--secondary reveal reveal--d2">
+                            <div class="selling__card-image-wrapper">
+                                <img src="images/GET IT SOLD/1.webp" alt="Buyer guidance" class="selling__card-image">
+                                <div class="selling__card-overlay"></div>
+                            </div>
+                            <div class="selling__card-content">
+                                <h3 class="selling__card-title">Guide to Buyers</h3>
+                                <p class="selling__card-text">
+                                    Nobody knows the market like we do. Enjoy having a pro at your service. Market analysis, upgrades lists, contractors on speed dial, & more!
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Find Your Dream Home -->
+    <section id="search" class="search">
+        <div class="container">
+            <div class="search__header reveal">
+                <h2 class="section__title section__title--center">Find Your Dream Home</h2>
+                <p class="search__subtitle">Search Listings</p>
+            </div>
+            
+            <div class="search__form-wrapper reveal">
+                <!-- Live listings live on the main site; the form hands off to it. -->
+                <form class="search__form" id="searchForm"
+                      action="https://marcimetzger.com/listings" method="get">
+                    <div class="search__grid">
+                        <div class="search__field">
+                            <label for="location" class="search__label">Location</label>
+                            <input type="text" id="location" name="location" class="search__input"
+                                   placeholder="Enter location" autocomplete="address-level2">
+                        </div>
+                        
+                        <div class="search__field">
+                            <label for="type" class="search__label">Type</label>
+                            <select id="type" name="type" class="search__select">
+                                <option value="">Any Type</option>
+                                <option value="house">House</option>
+                                <option value="condo">Condo</option>
+                                <option value="land">Land</option>
+                                <option value="commercial">Commercial</option>
+                            </select>
+                        </div>
+                        
+                        <div class="search__field">
+                            <label for="sortBy" class="search__label">Sort By</label>
+                            <select id="sortBy" name="sortBy" class="search__select">
+                                <option value="newest">Newest</option>
+                                <option value="oldest">Oldest</option>
+                                <option value="price-asc">Least Expensive to Most</option>
+                                <option value="price-desc">Most Expensive to Least</option>
+                                <option value="beds-asc">Bedrooms (Low to High)</option>
+                                <option value="beds-desc">Bedrooms (High to Low)</option>
+                                <option value="baths-asc">Bathrooms (Low to High)</option>
+                                <option value="baths-desc">Bathrooms (High to Low)</option>
+                            </select>
+                        </div>
+                        
+                        <div class="search__field">
+                            <label for="bedrooms" class="search__label">Bedrooms</label>
+                            <select id="bedrooms" name="bedrooms" class="search__select">
+                                <option value="">Any Number</option>
+                                <option value="0">Studio</option>
+                                <option value="1">1+</option>
+                                <option value="2">2+</option>
+                                <option value="3">3+</option>
+                                <option value="4">4+</option>
+                                <option value="5">5+</option>
+                                <option value="6">6+</option>
+                            </select>
+                        </div>
+                        
+                        <div class="search__field">
+                            <label for="baths" class="search__label">Baths</label>
+                            <select id="baths" name="baths" class="search__select">
+                                <option value="">Any Number</option>
+                                <option value="1">1+</option>
+                                <option value="2">2+</option>
+                                <option value="3">3+</option>
+                                <option value="4">4+</option>
+                                <option value="5">5+</option>
+                                <option value="6">6+</option>
+                            </select>
+                        </div>
+                        
+                        <div class="search__field">
+                            <label for="minPrice" class="search__label">Min Price</label>
+                            <input type="number" id="minPrice" name="minPrice" class="search__input" placeholder="e.g., 100000" min="0">
+                        </div>
+                        
+                        <div class="search__field">
+                            <label for="maxPrice" class="search__label">Max Price</label>
+                            <input type="number" id="maxPrice" name="maxPrice" class="search__input" placeholder="e.g., 500000" min="0">
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="btn btn--primary btn--search">Search Listings</button>
+                </form>
+                <p class="search__handoff">
+                    Opens the live Pahrump listings &mdash;
+                    <a href="https://marcimetzger.com/listings" target="_blank" rel="noopener noreferrer">browse every active property</a>.
+                </p>
+                
+                <div class="search__notice">
+                    <p><strong>Prefer a personal list?</strong> Call <a href="tel:2069196886">(206) 919-6886</a> and Marci will put together homes that match your criteria &mdash; usually the same day.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photo Gallery -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <div class="gallery__header reveal">
+                <h2 class="section__title section__title--center">Photo Gallery</h2>
+                <p class="gallery__lead">
+                    Step inside the homes of the Pahrump Valley &mdash; from desert modern
+                    builds to wide-open ranchettes.
+                </p>
+            </div>
+
+            <div class="showcase reveal" id="showcase" data-duration="7000"
+                 role="group" aria-roledescription="carousel" aria-label="Property photo showcase">
+                <div class="showcase__stage">
+                    <div class="showcase__slides" id="showcaseSlides">
+                        <div class="showcase__slide is-active" id="showcaseSlide1" role="group"
+                             aria-roledescription="slide" aria-label="1 of 7"
+                             data-title="Featured Residence" data-meta="Pahrump, Nevada">
+                            <img class="showcase__image"
+                                 src="images/PHOTO GALLERY/4460-roseworthy.jpg"
+                                 alt="Featured Pahrump property — showcase photo 1" decoding="async">
+                        </div>
+                        <div class="showcase__slide" id="showcaseSlide2" role="group"
+                             aria-roledescription="slide" aria-label="2 of 7"
+                             data-title="Desert Light" data-meta="Pahrump, Nevada">
+                            <img class="showcase__image"
+                                 src="images/PHOTO GALLERY/5570-ailanto-14.jpg"
+                                 alt="Featured Pahrump property — showcase photo 2" loading="lazy" decoding="async">
+                        </div>
+                        <div class="showcase__slide" id="showcaseSlide3" role="group"
+                             aria-roledescription="slide" aria-label="3 of 7"
+                             data-title="Wide-Open Living" data-meta="Pahrump, Nevada">
+                            <img class="showcase__image"
+                                 src="images/PHOTO GALLERY/5570-ailanto-45.jpg"
+                                 alt="Featured Pahrump property — showcase photo 3" loading="lazy" decoding="async">
+                        </div>
+                        <div class="showcase__slide" id="showcaseSlide4" role="group"
+                             aria-roledescription="slide" aria-label="4 of 7"
+                             data-title="Room to Breathe" data-meta="Pahrump, Nevada">
+                            <img class="showcase__image"
+                                 src="images/PHOTO GALLERY/5570-ailanto-50.jpg"
+                                 alt="Featured Pahrump property — showcase photo 4" loading="lazy" decoding="async">
+                        </div>
+                        <div class="showcase__slide" id="showcaseSlide5" role="group"
+                             aria-roledescription="slide" aria-label="5 of 7"
+                             data-title="Valley Views" data-meta="Pahrump, Nevada">
+                            <img class="showcase__image"
+                                 src="images/PHOTO GALLERY/4787-beacon-ridge-54.jpg"
+                                 alt="Featured Pahrump property — showcase photo 5" loading="lazy" decoding="async">
+                        </div>
+                        <div class="showcase__slide" id="showcaseSlide6" role="group"
+                             aria-roledescription="slide" aria-label="6 of 7"
+                             data-title="Move-In Ready" data-meta="Pahrump, Nevada">
+                            <img class="showcase__image"
+                                 src="images/PHOTO GALLERY/4787-beacon-ridge-53.jpg"
+                                 alt="Featured Pahrump property — showcase photo 6" loading="lazy" decoding="async">
+                        </div>
+                        <div class="showcase__slide" id="showcaseSlide7" role="group"
+                             aria-roledescription="slide" aria-label="7 of 7"
+                             data-title="The Ridge Collection" data-meta="Pahrump, Nevada">
+                            <img class="showcase__image"
+                                 src="images/PHOTO GALLERY/4787-beacon-ridge-41.jpg"
+                                 alt="Featured Pahrump property — showcase photo 7" loading="lazy" decoding="async">
+                        </div>
+                    </div>
+
+                    <div class="showcase__veil" aria-hidden="true"></div>
+
+                    <div class="showcase__caption">
+                        <p class="showcase__counter">
+                            <span id="showcaseCurrent">01</span>
+                            <span class="showcase__counter-sep" aria-hidden="true"></span>
+                            <span class="showcase__counter-total">07</span>
+                        </p>
+                        <h3 class="showcase__title" id="showcaseTitle">Featured Residence</h3>
+                        <p class="showcase__meta" id="showcaseMeta">Pahrump, Nevada</p>
+                    </div>
+
+                    <div class="showcase__controls">
+                        <button type="button" class="showcase__nav" id="showcasePrev" aria-label="Previous photo">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
+                                 stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M15 5 8 12l7 7"/>
+                            </svg>
+                        </button>
+                        <button type="button" class="showcase__nav" id="showcaseNext" aria-label="Next photo">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
+                                 stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M9 5l7 7-7 7"/>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <button type="button" class="showcase__toggle" id="showcaseToggle"
+                            aria-pressed="false" aria-label="Pause slideshow">
+                        <svg class="showcase__icon showcase__icon--pause" viewBox="0 0 24 24"
+                             fill="currentColor" aria-hidden="true">
+                            <rect x="7.5" y="6" width="3" height="12" rx="1"/>
+                            <rect x="13.5" y="6" width="3" height="12" rx="1"/>
+                        </svg>
+                        <svg class="showcase__icon showcase__icon--play" viewBox="0 0 24 24"
+                             fill="currentColor" aria-hidden="true">
+                            <path d="M8.5 5.7a1 1 0 0 1 1.52-.85l8.1 6.3a1.2 1.2 0 0 1 0 1.7l-8.1 6.3a1 1 0 0 1-1.52-.85z"/>
+                        </svg>
+                    </button>
+
+                    <button type="button" class="showcase__expand" id="showcaseExpand"
+                            aria-label="View this photo full screen">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
+                             stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M4 9V4h5M20 15v5h-5M20 9V4h-5M4 15v5h5"/>
+                        </svg>
+                    </button>
+
+                    <div class="showcase__track" aria-hidden="true">
+                        <span class="showcase__bar" id="showcaseBar"></span>
+                    </div>
+                </div>
+
+                <div class="showcase__thumbs" id="showcaseThumbs" role="tablist" aria-label="Choose a photo">
+                    <button type="button" class="showcase__thumb is-active" role="tab"
+                            aria-selected="true" aria-controls="showcaseSlide1" aria-label="Show photo 1" tabindex="0">
+                        <img src="images/PHOTO GALLERY/thumbs/t1.jpg" alt="" loading="lazy">
+                        <span class="showcase__thumb-num" aria-hidden="true">01</span>
+                    </button>
+                    <button type="button" class="showcase__thumb" role="tab"
+                            aria-selected="false" aria-controls="showcaseSlide2" aria-label="Show photo 2" tabindex="-1">
+                        <img src="images/PHOTO GALLERY/thumbs/t2.jpg" alt="" loading="lazy">
+                        <span class="showcase__thumb-num" aria-hidden="true">02</span>
+                    </button>
+                    <button type="button" class="showcase__thumb" role="tab"
+                            aria-selected="false" aria-controls="showcaseSlide3" aria-label="Show photo 3" tabindex="-1">
+                        <img src="images/PHOTO GALLERY/thumbs/t3.jpg" alt="" loading="lazy">
+                        <span class="showcase__thumb-num" aria-hidden="true">03</span>
+                    </button>
+                    <button type="button" class="showcase__thumb" role="tab"
+                            aria-selected="false" aria-controls="showcaseSlide4" aria-label="Show photo 4" tabindex="-1">
+                        <img src="images/PHOTO GALLERY/thumbs/t4.jpg" alt="" loading="lazy">
+                        <span class="showcase__thumb-num" aria-hidden="true">04</span>
+                    </button>
+                    <button type="button" class="showcase__thumb" role="tab"
+                            aria-selected="false" aria-controls="showcaseSlide5" aria-label="Show photo 5" tabindex="-1">
+                        <img src="images/PHOTO GALLERY/thumbs/t5.jpg" alt="" loading="lazy">
+                        <span class="showcase__thumb-num" aria-hidden="true">05</span>
+                    </button>
+                    <button type="button" class="showcase__thumb" role="tab"
+                            aria-selected="false" aria-controls="showcaseSlide6" aria-label="Show photo 6" tabindex="-1">
+                        <img src="images/PHOTO GALLERY/thumbs/t6.jpg" alt="" loading="lazy">
+                        <span class="showcase__thumb-num" aria-hidden="true">06</span>
+                    </button>
+                    <button type="button" class="showcase__thumb" role="tab"
+                            aria-selected="false" aria-controls="showcaseSlide7" aria-label="Show photo 7" tabindex="-1">
+                        <img src="images/PHOTO GALLERY/thumbs/t7.jpg" alt="" loading="lazy">
+                        <span class="showcase__thumb-num" aria-hidden="true">07</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+        <button class="lightbox__close" id="lightboxClose" aria-label="Close image viewer">&times;</button>
+        <img src="" alt="" class="lightbox__image" id="lightboxImage">
+    </div>
+
+    <!-- Our Services -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="services__header reveal">
+                <h2 class="section__title section__title--center">Our Services</h2>
+                <div class="services__title-line"></div>
+            </div>
+            
+            <div class="services__masonry">
+                <article class="service__item service__item--large reveal">
+                    <div class="service__image-wrapper">
+                        <img src="images/OUR SERVICES/4.webp" alt="Real estate done right" class="service__image">
+                        <div class="service__overlay"></div>
+                    </div>
+                    <div class="service__content">
+                        <div class="service__icon-badge">🏡</div>
+                        <h3 class="service__title">Real Estate Done Right</h3>
+                        <p class="service__subtitle">Commercial & Residential Excellence</p>
+                        <p class="service__text">
+                            Nervous about your property adventure? Don’t be. Whether you're getting ready to buy or sell your residence, looking at investment properties, or just curious about the markets, our team ensures you get the best experience possible!
+                        </p>
+                    </div>
+                </article>
+
+                <article class="service__item reveal reveal--d1">
+                    <div class="service__image-wrapper">
+                        <img src="images/OUR SERVICES/5.webp" alt="Commercial and residential services" class="service__image">
+                        <div class="service__overlay"></div>
+                    </div>
+                    <div class="service__content">
+                        <div class="service__icon-badge">💎</div>
+                        <h3 class="service__title">Every Property Type</h3>
+                        <p class="service__text">
+                            Large or small, condo or mansion, we can find it and get at the price that's right. Fixer-uppers? Luxury? We can help with all of it! We live, work, and play in this community. Happy to help you find where to put your hard-earned dollars.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="service__item reveal reveal--d2">
+                    <div class="service__image-wrapper">
+                        <img src="images/OUR SERVICES/6.webp" alt="Expert guidance" class="service__image">
+                        <div class="service__overlay"></div>
+                    </div>
+                    <div class="service__content">
+                        <div class="service__icon-badge">🎯</div>
+                        <h3 class="service__title">Rely on Expertise</h3>
+                        <p class="service__text">
+                            If you have questions about affordability, credit, and loan options, trust us to connect you with the right people to get the answers you need in a timely fashion. We make sure you feel confident and educated every step of the way.
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact__header reveal">
+                <p class="contact__eyebrow">Get in touch</p>
+                <h2 class="section__title section__title--center">Call or Visit</h2>
+                <p class="contact__lead">One number, one person. Call Marci directly, or leave a note and she will call you back &mdash; usually the same day.</p>
+            </div>
+
+            <div class="contact__grid reveal">
+                <aside class="contact__card">
+                    <p class="contact__card-eyebrow">The Ridge Realty Group</p>
+                    <h3 class="contact__card-title">Marci Metzger</h3>
+
+                    <a href="tel:2069196886" class="contact__card-phone">(206) 919-6886</a>
+                    <p class="contact__card-note">No assistant, no call centre. Marci answers personally, daily from 8:00 am to 7:00 pm.</p>
+
+                    <span class="contact__card-rule" aria-hidden="true"></span>
+
+                    <div class="contact__card-details">
+                        <div class="contact__card-detail">
+                            <p class="contact__card-label">Studio</p>
+                            <address class="contact__card-address">
+                                3190 Highway 160, Suite F<br>
+                                Pahrump, Nevada 89048
+                            </address>
+                            <a href="https://www.google.com/maps/search/?api=1&query=3190+HW-160+Suite+F+Pahrump+Nevada+89048" target="_blank" rel="noopener noreferrer" class="contact__card-link">Get directions</a>
+                        </div>
+
+                        <div class="contact__card-detail">
+                            <p class="contact__card-label">Hours</p>
+                            <p class="contact__card-value">Open daily<br>8:00 am &ndash; 7:00 pm</p>
+                            <p class="contact__status" id="officeStatus">
+                                <span class="contact__status-dot" aria-hidden="true"></span>
+                                <span id="officeStatusText">Open daily &middot; 8:00 am &ndash; 7:00 pm</span>
+                                <span class="contact__status-time" id="officeClock"></span>
+                            </p>
+                            <p class="contact__card-hint">Appointments outside office hours available upon request. Just call!</p>
+                        </div>
+                    </div>
+
+                    <div class="contact__card-social">
+                        <p class="contact__card-label">Follow</p>
+                        <div class="social__links">
+                            <a href="https://www.facebook.com/MarciHomes/" target="_blank" rel="noopener noreferrer" class="social__link" aria-label="Facebook">Facebook</a>
+                            <a href="https://www.instagram.com/marcimetzger_theridge/" target="_blank" rel="noopener noreferrer" class="social__link" aria-label="Instagram">Instagram</a>
+                            <a href="https://www.linkedin.com/in/marci-metzger-30642496/" target="_blank" rel="noopener noreferrer" class="social__link" aria-label="LinkedIn">LinkedIn</a>
+                            <a href="https://www.yelp.com/biz/xr3yQN_m2SgO0R_7S6p62w" target="_blank" rel="noopener noreferrer" class="social__link" aria-label="Yelp">Yelp</a>
+                        </div>
+                    </div>
+                </aside>
+
+                <div class="contact__form-wrapper">
+                    <h3 class="contact__subtitle">Send a message</h3>
+                    <p class="contact__form-lead">Prefer writing it down? Share a few details and Marci will follow up personally.</p>
+                    <!-- Formspree-ready: create a free form at formspree.io and swap YOUR_FORM_ID.
+                         Until then, script.js detects the placeholder and hands off to a phone call instead. -->
+                    <form class="contact__form" id="contactForm"
+                          action="https://formspree.io/f/YOUR_FORM_ID" method="POST" novalidate>
+                        <input type="hidden" name="_subject" value="New enquiry from marcimetzger.com">
+                        <input type="text" name="_gotcha" class="form__honeypot" tabindex="-1"
+                               autocomplete="off" aria-hidden="true">
+
+                        <div class="form__row">
+                            <div class="form__group">
+                                <label for="contactName" class="form__label">Name <span aria-label="required">*</span></label>
+                                <input type="text" id="contactName" name="name" class="form__input" required aria-required="true" autocomplete="name">
+                                <span class="form__error" id="nameError" aria-live="polite"></span>
+                            </div>
+
+                            <div class="form__group">
+                                <label for="contactEmail" class="form__label">Email <span aria-label="required">*</span></label>
+                                <input type="email" id="contactEmail" name="email" class="form__input" required aria-required="true" autocomplete="email">
+                                <span class="form__error" id="emailError" aria-live="polite"></span>
+                            </div>
+                        </div>
+
+                        <div class="form__group">
+                            <label for="contactMessage" class="form__label">Message</label>
+                            <textarea id="contactMessage" name="message" class="form__textarea" rows="5" placeholder="Buying, selling, or just weighing up your options?"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn--primary btn--full" id="contactSubmit">Send</button>
+                    </form>
+
+                    <div class="form__notice" id="formNotice" aria-live="polite">
+                        <p><strong>Thank you for reaching out.</strong> For a same-day answer, call <a href="tel:2069196886">(206) 919-6886</a> &mdash; Marci answers personally, daily from 8:00 am to 7:00 pm.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Map Section -->
+    <section id="visit" class="location" aria-labelledby="locationTitle">
+        <div class="location__glow location__glow--gold" aria-hidden="true"></div>
+        <div class="location__glow location__glow--sage" aria-hidden="true"></div>
+
+        <div class="container">
+            <div class="location__header reveal">
+                <p class="location__eyebrow">Pahrump, Nevada</p>
+                <h2 class="section__title section__title--center" id="locationTitle">Find the Office</h2>
+                <p class="location__lead">
+                    Right on Highway 160 in the heart of Pahrump. Stop by for a market update,
+                    a coffee, or a no-pressure conversation about your next move.
+                </p>
+            </div>
+
+            <div class="location__stage reveal">
+                <div class="location__map">
+                    <iframe
+                        src="https://maps.google.com/maps?q=3190%20NV-160%2C%20Suite%20F%2C%20Pahrump%2C%20NV%2089048&amp;t=m&amp;z=15&amp;ie=UTF8&amp;iwloc=near&amp;output=embed"
+                        title="Map to Marci Metzger — The Ridge Realty Group, 3190 Highway 160 Suite F, Pahrump, Nevada 89048"
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        allowfullscreen></iframe>
+                    <div class="location__map-shade" aria-hidden="true"></div>
+                    <p class="location__chip">
+                        <span class="location__chip-dot" aria-hidden="true"></span>
+                        3190 HW-160 &middot; Suite F
+                    </p>
+                </div>
+
+                <aside class="location__panel">
+                    <p class="location__panel-eyebrow">The Ridge Realty Group</p>
+                    <h3 class="location__panel-title">Marci Metzger</h3>
+                    <span class="location__rule" aria-hidden="true"></span>
+
+                    <address class="location__address">
+                        3190 Highway 160, Suite F<br>
+                        Pahrump, Nevada 89048
+                    </address>
+
+                    <ul class="location__meta">
+                        <li class="location__meta-item">
+                            <span class="location__meta-label">Phone</span>
+                            <a href="tel:2069196886" class="location__meta-value">(206) 919-6886</a>
+                        </li>
+                        <li class="location__meta-item">
+                            <span class="location__meta-label">Open</span>
+                            <span class="location__meta-value">Daily &middot; 8:00 am &ndash; 7:00 pm</span>
+                        </li>
+                        <li class="location__meta-item">
+                            <span class="location__meta-label">Parking</span>
+                            <span class="location__meta-value">Free on-site parking</span>
+                        </li>
+                    </ul>
+
+                    <a href="https://www.google.com/maps/dir/?api=1&amp;destination=3190+NV-160+Suite+F+Pahrump+Nevada+89048"
+                       target="_blank" rel="noopener noreferrer" class="btn btn--primary location__cta">
+                        Get Directions
+                    </a>
+                </aside>
+            </div>
+
+            <p class="location__footnote">
+                Suite F &middot; Highway 160 &middot; Pahrump, NV &mdash;
+                <a href="https://www.google.com/maps/search/?api=1&amp;query=3190+NV-160+Suite+F+Pahrump+Nevada+89048"
+                   target="_blank" rel="noopener noreferrer">open in Google Maps</a>
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__trust" aria-label="Professional affiliations">
+                <img src="images/badges/top-producer.png" alt="Top Producer"
+                     class="footer__badge footer__badge--wide" loading="lazy" decoding="async">
+                <img src="images/badges/equal-housing.png" alt="Equal Housing Opportunity"
+                     class="footer__badge" loading="lazy" decoding="async">
+                <img src="images/badges/realtor-pin.jpg" alt="REALTOR&reg;"
+                     class="footer__badge" loading="lazy" decoding="async">
+                <img src="images/badges/chamber.jpg" alt="Pahrump Valley Chamber of Commerce"
+                     class="footer__badge" loading="lazy" decoding="async">
+            </div>
+
+            <div class="footer__content">
+                <p class="footer__copyright">Copyright © 2026 Marci METZGER - All Rights Reserved</p>
+
+                <div class="footer__cookie">
+                    <p class="footer__cookie-text">This website uses cookies. We use cookies to analyze website traffic and optimize your website experience. By accepting our use of cookies, your data will be aggregated with all other user data.</p>
+                    <button type="button" class="footer__cookie-accept" id="cookieAccept">Accept</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button type="button" class="to-top" id="toTop" aria-label="Back to top">
+        <svg class="to-top__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path d="M12 19V5M5 12l7-7 7 7" fill="none" stroke="currentColor"
+                  stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
